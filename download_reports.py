@@ -28,7 +28,7 @@ def download_reports():
   
 # Reading the id's of success scanned id's line by line and downloading the report
 # Opening the file called success to read id's
-  with open('successful_targets') as filepointer:
+  with open('successful_id') as filepointer:
     scanned_id_line = filepointer.readline()
     while scanned_id_line:
        
@@ -79,3 +79,8 @@ def download_reports():
               open(scanid,'w+').write(download_result.content)
        # Reading the next line of the success file to repeat the process.
        scanned_id_line=filepointer.readline()
+  
+  file_pointer = open("successful_id","w+")
+  file_pointer.truncate(0)
+  file_pointer.close()
+

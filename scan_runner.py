@@ -5,6 +5,7 @@ import datetime
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 def scan_runner( target ):
+  print "running scan_runner"
   requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
   # Opening a file called Running to store the details of created scans.
