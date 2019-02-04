@@ -38,7 +38,7 @@ def download_reports():
        scanid= scanned_id[0]
        
        # Exporting the scanid and checking whether their is any file existed or not
-       scanurl = "https://172.16.7.20:8834/scans/" + str(scanid) + "/export"
+       scanurl = "https://x.x.x.x:8834/scans/" + str(scanid) + "/export"
        print scanid
        scanpld = '{"format":"nessus"}'
        results = requests.post(scanurl,verify=False,headers=Headers,data=scanpld)

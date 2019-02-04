@@ -14,7 +14,7 @@ def scan_status( scanid,target_list,targets ):
   success_id = open("successful_id","a+")
   failed = open("targets","a+")
 
-  tokenurl = "https://172.16.7.20:8834/session"
+  tokenurl = "https://x.x.x.x:8834/session"
   Headers = {
              'Content-Type': 'application/json'
   }
